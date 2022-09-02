@@ -1,0 +1,107 @@
+﻿@page
+@model ReLuxWeb.Pages.Admin.Products.UpsertModel
+
+
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Product.Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <div class="col-9">
+                <h2 class="text-primary">@(Model.Product.Id != 0 ? "Update" : "Create") Product</h2>
+                <hr />
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="mb-3">
+                    <label asp-for="Product.Name" class="form-control mb-1"></label>
+                    <input asp-for="Product.Name" class="form-control" />
+                    <span asp-validation-for="Product.Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.Description" class="form-control mb-1"></label>
+                    <textarea asp-for="Product.Description" class="form-control"></textarea>
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.EstRetailValue" class="form-control mb-1"></label>
+                    <input asp-for="Product.EstRetailValue" class="form-control" />
+                    <span asp-validation-for="Product.EstRetailValue" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.Price" class="form-control mb-1"></label>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.Image" class="form-control mb-1"></label>
+                    <input type="file" name="files" id="uploadBox" class="form-control" />
+                </div>
+                <div class="mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input asp-for="Product.IsSold" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="" value="1">
+                    <label class="btn btn-outline-primary" for="btnradio1">Sold</label>
+                    <input asp-for="Product.IsSold" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="" value="0">
+                    <label class="btn btn-outline-primary" for="btnradio2">Not Sold</label>
+                    <span asp-validation-for="Product.IsSold" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.CategoryId" class="form-control mb-1">Category</label>
+                    <select asp-for="Product.CategoryId" asp-items="Model.CategoryList" class="form-select">
+                        <option disabled selected>--Select a Category--</option>
+                    </select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Product.RateConditionId" class="form-control mb-1">Rate Condition</label>
+                    <select asp-for="Product.RateConditionId" asp-items="Model.RateConditionList" class="form-select">
+                        <option disabled selected>--Set rate condition--</option>
+                    </select>
+                    <span asp-validation-for="Product.RateConditionId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-3">
+                @if (Model.Product.Id != 0)
+                {
+                    <img src="@Model.Product.Image" width="100%" style="border-radius:5px; border:1px solid #bb9b9" />
+                }
+            </div>
+        </div>
+        @if (Model.Product.Id != 0)
+        {
+            <button type="submit" class="btn btn-primary" style="width:150px;">Update</button>
+        }
+        else
+        {
+            <button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px;">Create</button>
+        }
+
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px">Back to the list</a>
+    </div>
+
+
+</form>
+
+
+@section Scripts{
+    @{
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+                toolbar_mode: 'floating',
+
+            });
+
+            function ValidateInput() {
+                if (document.getElementById("uploadBox").value == "") {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please upload an Image!',
+                    });
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }

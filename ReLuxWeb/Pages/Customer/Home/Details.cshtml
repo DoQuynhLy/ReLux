@@ -1,0 +1,68 @@
+﻿@page
+@model ReLuxWeb.Pages.Customer.Home.DetailsModel
+
+
+<div class="">
+    <form method="post">
+        <div class="container backgroundWhite">
+            <div class="card">
+                <div class="card-header">
+                    <div class="text-light ml-0 row ">
+                        <div class="col-12 col-md-6 pt-2">
+                            <h1 class="text-primary">@Model.Product.Name</h1>
+                        </div>
+                        <div class="col-12 col-md-6 text-end pt-2">
+                            <h1 class="text-muted"> $@Model.Product.Price</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="container rounded p-2">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <span class="badge bg-warning p-3 h3">@Model.Product.Category.Name</span>
+                                        <span class="badge bg-dark p-3">
+                                            New LV:
+                                            @for (int i = 0; i < @Model.Product.RateCondition.Stars; i++)
+                                            {
+											    <i class="bi bi-star-fill"></i>
+										    } 
+									    </span>
+                                        <h3 class="text-success"></h3>
+
+                                        <p class="text-secondary">@Model.Product.Description</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 p-1 text-center">
+                                <img src="@Model.Product.Image" width="100%" class="rounded" />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-12 col-md-6 pb-1 ">
+                            <a class="btn btn-success btn-square form-control" style="height:50px;">Back to List</a>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <button type="submit" class="btn btn-primary btn-square form-control" style="height:50px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

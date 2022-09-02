@@ -1,0 +1,17 @@
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.DataAccess.deps.json
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.DataAccess.runtimeconfig.json
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.DataAccess.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.DataAccess.pdb
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.Models.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\bin\Debug\net6.0\ReLux.Models.pdb
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.csproj.AssemblyReference.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.AssemblyInfoInputs.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.AssemblyInfo.cs
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.csproj.CopyComplete
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\refint\ReLux.DataAccess.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.pdb
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ReLux.DataAccess.genruntimeconfig.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.DataAccess\obj\Debug\net6.0\ref\ReLux.DataAccess.dll

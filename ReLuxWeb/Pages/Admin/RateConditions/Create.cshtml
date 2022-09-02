@@ -1,0 +1,31 @@
+﻿@page
+@model ReLuxWeb.Pages.Admin.RateConditions.CreateModel
+
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Set Rate Condition</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="RateCondition.Description" class="form-control mb-1"></label>
+            <input asp-for="RateCondition.Description" class="form-control" />
+            <span asp-validation-for="RateCondition.Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="RateCondition.Stars" class=" form-control mb-1"></label>
+            <input asp-for="RateCondition.Stars" class="form-control" />
+            <span asp-validation-for="RateCondition.Stars" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-page="Index" class="btn btn-secondary" style="width:150px">Back to the list</a>
+    </div>
+
+
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

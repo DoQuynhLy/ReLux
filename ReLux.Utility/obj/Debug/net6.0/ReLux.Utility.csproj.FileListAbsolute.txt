@@ -1,0 +1,12 @@
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\bin\Debug\net6.0\ReLux.Utility.deps.json
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\bin\Debug\net6.0\ReLux.Utility.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\bin\Debug\net6.0\ReLux.Utility.pdb
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.csproj.AssemblyReference.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.AssemblyInfoInputs.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.AssemblyInfo.cs
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.csproj.CoreCompileInputs.cache
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\refint\ReLux.Utility.dll
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ReLux.Utility.pdb
+C:\Users\quynh\source\repos\ReLux\ReLux.Utility\obj\Debug\net6.0\ref\ReLux.Utility.dll
