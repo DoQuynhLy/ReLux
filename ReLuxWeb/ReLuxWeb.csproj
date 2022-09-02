@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReLux.DataAccess\ReLux.DataAccess.csproj" />
+    <ProjectReference Include="..\ReLux.Utility\ReLux.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

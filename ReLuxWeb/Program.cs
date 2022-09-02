@@ -3,6 +3,8 @@ using ReLux.DataAccess.Data;
 using ReLux.DataAccess.Repository.IRepository;
 using ReLux.DataAccess.Repository;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using ReLux.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +15,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
         builder.Configuration.GetConnectionString("DefaultConnectionString")
     ));
 
-builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
+
+builder.Services.AddIdentity<IdentityUser,IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

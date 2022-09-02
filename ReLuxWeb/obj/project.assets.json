@@ -3657,6 +3657,19 @@
         "runtime": {
           "bin/placeholder/ReLux.Models.dll": {}
         }
+      },
+      "ReLux.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/ReLux.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReLux.Utility.dll": {}
+        }
       }
     }
   },
@@ -10313,6 +10326,11 @@
       "type": "project",
       "path": "../ReLux.Models/ReLux.Models.csproj",
       "msbuildProject": "../ReLux.Models/ReLux.Models.csproj"
+    },
+    "ReLux.Utility/1.0.0": {
+      "type": "project",
+      "path": "../ReLux.Utility/ReLux.Utility.csproj",
+      "msbuildProject": "../ReLux.Utility/ReLux.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10323,7 +10341,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.8",
-      "ReLux.DataAccess >= 1.0.0"
+      "ReLux.DataAccess >= 1.0.0",
+      "ReLux.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10361,6 +10380,9 @@
           "projectReferences": {
             "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLux.DataAccess\\ReLux.DataAccess.csproj": {
               "projectPath": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLux.DataAccess\\ReLux.DataAccess.csproj"
+            },
+            "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLux.Utility\\ReLux.Utility.csproj": {
+              "projectPath": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLux.Utility\\ReLux.Utility.csproj"
             }
           }
         }

@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.8",
-          "ReLux.DataAccess": "1.0.0"
+          "ReLux.DataAccess": "1.0.0",
+          "ReLux.Utility": "1.0.0"
         },
         "runtime": {
           "ReLuxWeb.dll": {}
@@ -2315,6 +2316,14 @@
         "runtime": {
           "ReLux.Models.dll": {}
         }
+      },
+      "ReLux.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.8"
+        },
+        "runtime": {
+          "ReLux.Utility.dll": {}
+        }
       }
     }
   },
@@ -3583,6 +3592,11 @@
       "sha512": ""
     },
     "ReLux.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReLux.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -271,3 +271,5 @@ C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\runtimes\win\lib\net
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\obj\Debug\net6.0\ReLuxWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\ReLux.Utility.dll
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\ReLux.Utility.pdb
