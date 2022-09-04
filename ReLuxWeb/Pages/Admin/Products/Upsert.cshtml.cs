@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ReLux.DataAccess.Repository.IRepository;
 using ReLux.Models;
+using ReLux.Utility;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ReLuxWeb.Pages.Admin.Products
@@ -63,6 +65,16 @@ namespace ReLuxWeb.Pages.Admin.Products
                     files[0].CopyTo(fileStream);
                 }
                 Product.Image = @"\Images\Product\" + fileName_new + extension;
+
+                string isSold = Request.Form["isSold"].ToString();
+                if (isSold == "1")
+                {
+                    Product.IsSold = true;
+                }
+                else
+                {
+                    Product.IsSold= false;
+                }
                 _unitOfWork.Product.Add(Product);
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
@@ -71,6 +83,7 @@ namespace ReLuxWeb.Pages.Admin.Products
             {
                 //edit
                 var objFromDb = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == Product.Id);
+                
                 if (files.Count > 0)
                 {
                     string fileName_new = Guid.NewGuid().ToString();

@@ -4,15 +4,17 @@
 
 <div class="">
     <form method="post">
+        <input asp-for="ShoppingCart.ProductId" hidden/>
+        <input asp-for="ShoppingCart.ApplicationUserId" hidden />
         <div class="container backgroundWhite">
             <div class="card">
                 <div class="card-header">
                     <div class="text-light ml-0 row ">
                         <div class="col-12 col-md-6 pt-2">
-                            <h1 class="text-primary">@Model.Product.Name</h1>
+                            <h1 class="text-primary">@Model.ShoppingCart.Product.Name</h1>
                         </div>
                         <div class="col-12 col-md-6 text-end pt-2">
-                            <h1 class="text-muted"> $@Model.Product.Price</h1>
+                            <h1 class="text-muted"> $@Model.ShoppingCart.Product.Price</h1>
                         </div>
                     </div>
                 </div>
@@ -23,24 +25,28 @@
                                 <div class="row">
 
                                     <div class="col-12">
-                                        <span class="badge bg-warning p-3 h3">@Model.Product.Category.Name</span>
+                                        <span class="badge bg-warning p-3 h3">@Model.ShoppingCart.Product.Category.Name</span>
                                         <span class="badge bg-dark p-3">
                                             New LV:
-                                            @for (int i = 0; i < @Model.Product.RateCondition.Stars; i++)
+                                            @for (int i = 0; i < @Model.ShoppingCart.Product.RateCondition.Stars; i++)
                                             {
 											    <i class="bi bi-star-fill"></i>
 										    } 
 									    </span>
                                         <h3 class="text-success"></h3>
 
-                                        <p class="text-secondary">@Model.Product.Description</p>
-
+                                        <p class="text-secondary">@Model.ShoppingCart.Product.Description</p>
+                                        <div class="form-floating my-2">
+                                            <input disabled asp-for="@Model.ShoppingCart.Count" class="form-control" aria-required="true" />
+                                            <label asp-for="@Model.ShoppingCart.Count">Quantity</label>
+                                            <span asp-validation-for="@Model.ShoppingCart.Count" class="text-danger"></span>
+                                        </div>
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 p-1 text-center">
-                                <img src="@Model.Product.Image" width="100%" class="rounded" />
+                                <img src="@Model.ShoppingCart.Product.Image" width="100%" class="rounded" />
                             </div>
 
 

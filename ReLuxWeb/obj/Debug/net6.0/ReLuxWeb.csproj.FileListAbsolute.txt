@@ -273,3 +273,7 @@ C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.Extensions
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\obj\Debug\net6.0\ReLuxWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\ReLux.Utility.dll
 C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\ReLux.Utility.pdb
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Stripe.net.dll
+C:\Users\quynh\source\repos\ReLux\ReLuxWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll

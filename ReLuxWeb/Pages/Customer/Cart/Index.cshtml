@@ -1,0 +1,83 @@
+﻿@page
+@model ReLuxWeb.Pages.Customer.Cart.IndexModel
+
+<form method="post">
+    <br />
+
+    @if (Model.ShoppingCartList.Count() == 0) {
+        <p>Please add items to Shopping Cart!</p>
+    }
+    else
+    {
+        <div class="container">
+            <div class="card">
+                <div class="card-header bg-dark text-light ml-0 ">
+                    <div class="row">
+                        <div class="col-6 pt-2">
+                            Shopping Cart
+                        </div>
+                        <div class="col-6 text-end">
+                            <a href="/Customer/Home/Index" class="btn btn-outline-info btn-sm">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @foreach (var item in Model.ShoppingCartList)
+                    {
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-2 text-center py-2">
+                                <img src="@item.Product.Image" class="rounded" width="120" height="80" />
+                            </div>
+                            <div class="col-12 text-sm-center text-md-start col-md-5 pt-md-4 ">
+                                <h4><strong>@item.Product.Name</strong></h4>
+
+                                <div class="badge bg-primary text-center" style="font-size:12px;">
+                                    @item.Product.Category.Name
+                                </div>
+                                <div class="badge bg-info text-center" style="font-size:12px;">
+                                    <span>New LV:</span>
+                                    @for (int i = 0; i < @item.Product.RateCondition.Stars; i++)
+                                    {
+                                        <i class="bi bi-star-fill"></i>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-12 text-sm-center col-md-5 text-md-start row pt-3">
+                                <div class="col-10 text-md-right pt-md-3" style="padding-top:5px;">
+                                    <h6><strong>$@item.Product.Price <span class="text-muted">x</span> @item.Count </strong></h6>
+                                </div>
+                                <div class="col-2 col-sm-4 col-lg-2 text-right">
+                                    <button type="submit" class="btn btn-outline-danger" asp-page-handler="Remove" asp-route-cartId="@item.Id">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    }
+
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-1 col-lg-4 offset-lg-3 pr-4">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between bg-light">
+                                    <span class="text-info"> Total (CAD)</span>
+                                    <strong class="text-info">$@Model.CartTotal.ToString("0.00")</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card-footer">
+                    <div class="col-12 col-lg-4 offset-lg-8 col-md-6 offset-md-6">
+                        <a asp-page="Summary" class="btn btn-success form-control">Summary</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</form>
+

@@ -11,6 +11,10 @@ namespace ReLux.DataAccess.Repository.IRepository
         ICategoryRepository Category { get; }
         IRateConditionRepository RateCondition { get; }
         IProductRepository Product { get; }
+        IShoppingCartRepository ShoppingCart { get; }
+        IOrderHeaderRepository OrderHeader { get; }
+        IOrderDetailsRepository OrderDetails { get; }
+        IApplicationUserRepository ApplicationUser { get; }
         void Save();
     }
 }

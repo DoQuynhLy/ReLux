@@ -35,11 +35,9 @@
                     <label asp-for="Product.Image" class="form-control mb-1"></label>
                     <input type="file" name="files" id="uploadBox" class="form-control" />
                 </div>
-                <div class="mb-3 btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input asp-for="Product.IsSold" type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="" value="1">
-                    <label class="btn btn-outline-primary" for="btnradio1">Sold</label>
-                    <input asp-for="Product.IsSold" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="" value="0">
-                    <label class="btn btn-outline-primary" for="btnradio2">Not Sold</label>
+                <div class="form-floating mb-2">
+                    <input type="radio" name="isSold" value=1 />Sold
+                    <input type="radio" name="isSold" value=0 checked="checked"/>Not Sold
                     <span asp-validation-for="Product.IsSold" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
