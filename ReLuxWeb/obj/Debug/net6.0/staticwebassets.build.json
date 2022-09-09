@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hnsVRWU5AHgU4QPGWUI9f8u+8dpg8PK/IRiO8hzPIqE=",
+  "Hash": "OlBkTiNv1C2201jo8SQfDcxpnRQGNzuDBZgMU0S4qJY=",
   "Source": "ReLuxWeb",
   "BasePath": "_content/ReLuxWeb",
   "Mode": "Default",
@@ -1258,6 +1258,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Product\\30fa7335-816f-4fe2-b19b-3444e8aff9e4.jpg"
     },
     {
+      "Identity": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\Images\\Product\\4b5571c8-0578-4b8e-b067-386383ff0a40.jpg",
+      "SourceId": "ReLuxWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\",
+      "BasePath": "_content/ReLuxWeb",
+      "RelativePath": "Images/Product/4b5571c8-0578-4b8e-b067-386383ff0a40.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Product\\4b5571c8-0578-4b8e-b067-386383ff0a40.jpg"
+    },
+    {
       "Identity": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\Images\\Product\\51c2a465-2a0a-44e5-99c3-1d90bf81fa3b.jpg",
       "SourceId": "ReLuxWeb",
       "SourceType": "Discovered",
@@ -1290,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Product\\7667c319-ee78-4fe1-b134-997a8999152f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\Images\\Product\\7e13d13e-0794-424a-a08d-28cc21533abb.jpg",
+      "SourceId": "ReLuxWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\",
+      "BasePath": "_content/ReLuxWeb",
+      "RelativePath": "Images/Product/7e13d13e-0794-424a-a08d-28cc21533abb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Product\\7e13d13e-0794-424a-a08d-28cc21533abb.jpg"
     },
     {
       "Identity": "C:\\Users\\quynh\\source\\repos\\ReLux\\ReLuxWeb\\wwwroot\\Images\\Product\\7ecab3bf-0c17-45bb-ac4f-7a9202b06018.jpg",
